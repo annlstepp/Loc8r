@@ -6,6 +6,7 @@ const locationsCreate = (req, res) => {
     .status(200)
     .json({"status" : "success"}); 
 };
+const locationsListByDistance = (req, res) => {};
 
 module.exports = {
   locationsListByDistance,
