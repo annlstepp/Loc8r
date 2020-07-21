@@ -6,7 +6,11 @@ const locationsCreate = (req, res) => {
     .status(200)
     .json({"status" : "success"}); 
 };
+
 const locationsListByDistance = (req, res) => {};
+const locationsReadOne = (req, res) => {};
+const locationsUpdateOne = (req, res) => {};
+const locationsDeleteOne = (req, res) => {};
 
 module.exports = {
   locationsListByDistance,
