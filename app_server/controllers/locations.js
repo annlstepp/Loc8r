@@ -6,6 +6,7 @@ const homelist = (req,res) => {
         title: 'Loc8r',
         strapline: 'Find places to work with wifi near you!'
       },
+      sidebar: "Loc8r helps you find places to work when out and about. Perhaps with coffee, cake, or a pint?  Let Loc8r help you find the place you're looking for.",
       locations: [{ 
         name: 'Starcups',
         address: '125 High Street, Reading, RG6 1PS',
@@ -44,13 +45,13 @@ const locationInfo = (req, res) => {
       coords: {lat: 51.455041, lng: -0.9690884},
       openingTimes: [{
         days: 'Monday - Friday',
-        opening: '7:00am',
-        closing: '7:00pm',
+        opening: ' 7:00am',
+        closing: ' 7:00pm',
         closed: false
       },{
         days: 'Saturday',
-        opening: '8:00am',
-        closing: '5:00pm',
+        opening: ' 8:00am',
+        closing: ' 5:00pm',
         closed: false  
       },{
         days: 'Sunday',
@@ -59,12 +60,12 @@ const locationInfo = (req, res) => {
       reviews: [{
         author: 'Simon Homes',
         rating: 5,
-        timestamp: '16 july 2013',
-        reviewText: 'What a great place. I can\'t say enoung good things about it'    
+        timestamp: 'July 16, 2013',
+        reviewText: 'What a great place! I can\'t say enough good things about it'    
       },{
         author: 'Charlie Chaplin',
         rating: 3,
-        timestamp: '16 July 2013',
+        timestamp: 'July 16, 2013',
         reviewText: 'It was okay. Coffee wasn\'t great, but the wifi was fast.'   
       }]
     }

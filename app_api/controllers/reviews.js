@@ -1,0 +1,16 @@
+const mongoose = require('mongoose');
+const Loc = mongoose.model('Location');
+
+const reviewsCreate = (req, res) => {
+  res
+    .status(200)
+    .json({"status" : "success"});
+};
+
+module.exports = {
+  reviewsListByDistance,
+  reviewsCreate,
+  reviewsReadOne,
+  reviewsUpdateOne,
+  reviewsDeleteOne
+};
