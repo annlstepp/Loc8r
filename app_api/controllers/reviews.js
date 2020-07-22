@@ -6,7 +6,26 @@ const reviewsCreate = (req, res) => {
     .status(200)
     .json({"status" : "success"});
 };
-
+const reviewsListByDistance = (req, res) => {
+    res
+      .status(200)
+      .json({"status" : "success"});
+  };
+  const reviewsReadOne = (req, res) => {
+    res
+      .status(200)
+      .json({"status" : "success"});
+  };
+  const reviewsUpdateOne = (req, res) => {
+    res
+      .status(200)
+      .json({"status" : "success"});
+  };
+  const reviewsDeleteOne = (req, res) => {
+    res
+      .status(200)
+      .json({"status" : "success"});
+  };
 module.exports = {
   reviewsListByDistance,
   reviewsCreate,
