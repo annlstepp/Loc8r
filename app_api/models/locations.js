@@ -11,20 +11,28 @@ const openingTimeSchema = new mongoose.Schema ({
     required: true
   }
 });
-const reviewSchema = new mongoose.Schema ({
-    author: String,
-    rating: {
-      type: Number,
-      required: true,
-      min: 0,
-      max: 5
-    },
-    reviewText: String,
-    createdOn: {
-      type: Date,
-      'default': Date.now
-    }
-  });
+
+const reviewSchema = new mongoose.Schema({
+  author: {
+    type: String,
+    required: true
+  },
+  rating: {
+    type: Number,
+    required: true,
+    min: 0,
+    max: 5
+  },
+  reviewText: {
+    type: String,
+    required: true
+  },
+  createdOn: {
+    type: Date,
+    'default': Date.now
+  }
+});
+
 const locationsSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -34,7 +42,7 @@ const locationsSchema = new mongoose.Schema({
   rating: {
     type: Number,
     'default': 0,
-    min: 1.,
+    min: 0,
     max: 5
   },
   facilities: [String],

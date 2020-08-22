@@ -5,7 +5,7 @@ const ctrlReviews = require('../controllers/reviews');
 
 //loctions//
 router
-  .route ('/locations')
+  .route('/locations')
   .get(ctrlLocations.locationsListByDistance)
   .post(ctrlLocations.locationsCreate);
 
@@ -26,4 +26,4 @@ router
   .put(ctrlReviews.reviewsUpdateOne)
   .delete(ctrlReviews.reviewsDeleteOne);
 
-  module.exports = router;
+module.exports = router;
