@@ -1,4 +1,4 @@
 export const environment = {
-  apiBaseUrl: 'http://gentle-refuge-29217.herokuapp.com/api',
+  apiBaseUrl: 'https://warm-cove-80741.herokuapp.com/api',
   production: true
 };
