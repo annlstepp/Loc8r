@@ -8,7 +8,7 @@ const connect = () => {
 }
 
 mongoose.connection.on('connected', () => {
-  console.log('Mongoose is connected'); 
+  console.log('Mongoose is connected', dbURL); 
 });
 mongoose.connection.on('error', err => {
     console.log('Mongoose connection error: ' + err);
